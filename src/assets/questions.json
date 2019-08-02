@@ -1,0 +1,19 @@
+[
+    {"ID":"1","question":"At my company, getting paid leave is....", "anslistobj":["1", "2", "3", "4", "5"], "optionsText":["Very easy", "Very difficult"]},
+    {"ID":"2","question":"If I decided to have a child, I'd continue to work at this company...", "anslistobj":["1", "2", "3", "4", "5"], "optionsText":["Strongly agree", "Strongly disagree"]},
+    {"ID":"3","question":"I feel my company has good work-life balance", "anslistobj":["1", "2", "3", "4", "5"], "optionsText":["Strongly agree", "Strongly disagree"]},
+    {"ID":"4","question":"The current performance criteria adequately represents my contributions to the company", "anslistobj":["1", "2", "3", "4", "5"], "optionsText":["Strongly agree", "Strongly disagree"]},
+    {"ID":"5","question":"My salary is at par with my colleagues at the same level", "anslistobj":["1", "2", "3", "4", "5"], "optionsText":["Strongly agree", "Strongly disagree"]},
+    {"ID":"6","question":"Did you negotiate your salary", "anslistobj":["1", "2", "3", "4", "5"], "optionsText":["Never", "Always"]},
+    {"ID":"7","question":"If you wanted to, you would make it to the management role in this company in a short span", "anslistobj":["1", "2", "3", "4", "5"], "optionsText":["Strongly agree", "Strongly disagree"]},
+    {"ID":"8","question":"I feel my colleagues are welcoming to women and other genders.. ", "anslistobj":["1", "2", "3", "4", "5"], "optionsText":["Never", "Always"]},
+    {"ID":"9","question":"I feel comfortable spending time with my colleagues outside of work", "anslistobj":["1", "2", "3", "4", "5"], "optionsText":["Strongly agree", "Strongly disagree"]},
+    {"ID":"10","question":"Which one of the following could be a quote from your CEO/ MD/ Chairman?", "anslistobj":["Diversity is good for reputation and to attract talent", "Diversity increases productivity", "We are already doing a lot of things in our company", "We have just hired a diversity resource to manage the situation"], "optionsText":[]},
+    {"ID":"11","question":"I identify as", "anslistobj":["Male", "Female", "Non-binary"], "optionsText":[]},
+    {"ID":"12","question":"My annual salary is", "anslistobj":["Less than 12 lakhs", "12 lakhs - 18 lakhs", "19 lakhs - 24 lakhs", "More than 24 lakhs"], "optionsText":[]},
+    {"ID":"13","question":"My relationship to this company is", "anslistobj":["Former employee", "Current employee"], "optionsText":[]},
+    {"ID":"14","question":"My emotion towards the company is", "anslistobj":["Angry employee with a vengeance", "Happy employee who enjoyed/ enjoys their time at this workplace", "Don't care!"], "optionsText":[]},
+    {"ID":"15","question":"I work at the following level in the company", "anslistobj":["Entry level(Executives)", "Mid-management level(Managerial)", "Leadership(VP and above)"], "optionsText":[]},
+    {"ID":"16","question":"Do you want to receive your company's InclusionQuotient® report basis this quiz?", "anslistobj":["Yes", "No"], "optionsText":[]}
+]
+

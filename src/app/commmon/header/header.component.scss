@@ -1,0 +1,103 @@
+.home-text {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sub-menu-items {
+  text-decoration: none;
+  color: #d7d7d7;
+}
+a.directory {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: Montserrat;
+  font-size: 18px;
+}
+
+.header-text img.img-fluid {
+  height: 90px;
+}
+
+.aboutus-header {
+  padding: 20px 0px 0px 2px;
+}
+@media (max-width: 500px) {
+  .aboutus-header {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+  .header-text img.img-fluid {
+    height: 75px;
+  }
+}
+@media (max-width: 375px) {
+  .header-text img.img-fluid {
+    height: 75px;
+  }
+}
+@media (max-width: 320px) {
+  .header-text img.img-fluid {
+    height: 75px;
+  }
+}
+
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.look-for-company {
+  padding: 0px;
+  margin: 0 auto;
+  width: 57%;
+}
+.treating {
+  padding-top: 13rem;
+}
+@media (max-width: 500px) {
+  .treating {
+    padding-top: 5rem;
+  }
+}
+
+.search-icon {
+  text-align: center;
+  padding-top: 0px;
+}
+
+.search-text {
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding: 10px 0px 0px 15px;
+}
+
+.contributor {
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  padding-top: 30px;
+}
+
+.search-container {
+  /* margin: 20px 100px 0px 135px; */
+  padding-top: 40px;
+  /* text-align: center; */
+}

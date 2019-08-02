@@ -1,0 +1,223 @@
+.container-fluid{
+    background: url(../../../assets//banner-image1.png);
+    height: 137px;
+    background-position: center center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.new-company{
+    padding: 30px;    
+}
+.line_remove{
+    border-bottom:none !important; 
+    font-size: 40px;
+}
+.under_value {
+    border-bottom: 3px solid black;
+    width: fit-content;
+}
+.looking-for{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.company-name{
+    padding-top: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+@media (max-width:500px){
+.form-group{
+    padding: 0px 20px 0px 0px;
+}
+}
+.source-it{
+    padding: 5px 0px 10px 0px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+// .adjest{
+//     width: 543px;
+// }
+// @media (max-width:768px){
+//     .adjest{
+//         width: 690px;
+//     }
+// }
+// @media (max-width:425px){
+//     .adjest{
+//         width: 400px;
+//     }
+// }
+// @media (max-width:375px){
+//     .adjest{
+//         width: 343px;
+//     }
+// }
+// @media (max-width:320px){
+//     .adjest{
+//         width: 300px;
+//     }
+// }
+.employee{
+    margin:60px 0px 0px 0px;
+}
+
+.submit{
+    padding:5px 0px 200px 0px;
+}
+
+.input-data{
+    padding-top:0px;
+}
+
+.leave-us{
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.83;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.and{
+    margin:0px 80px 0px 80px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    align-items: center;
+    display: flex;
+}
+@media (max-width:768px){
+    .and{
+        margin:0px 10px 0px 10px;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.39;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+        align-items: center;
+        display: flex;
+    }
+}
+@media (max-width:500px){
+    .and{
+       display: none;
+    }
+}
+
+.example-full-width {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    width: 230px;
+  }
+
+  .example-full-width ::ng-deep .mat-form-field-label{
+      color: black
+  }
+  .data_value{
+    display: flex;
+    padding: 20px 0px 0px 0px;
+  }
+  .comment{
+    width: fit-content;
+  }
+  .form-control {
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    box-shadow: none !important;
+    padding: 20px 0px 0px 0px;
+}
+  .submit-btn{
+    background-image: linear-gradient(59deg, #5fbb04, #1d8502);
+    padding:9px 30px 9px 30px;
+    border-radius: 40px;
+    background-color: #ffffff;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  @media only screen and (max-width:768px){
+    .new-company{
+        margin:20px 0px 0px 0px;
+    } 
+    .looking-for{
+        font-size: 12px;
+    }
+
+    .example-full-width{
+        width: 283px;
+    }
+
+    .submit{
+        padding: 5px 0px 57px 0px;
+    }
+    
+    .company-name{
+        padding-top: 17px;
+        font-size: 17px;
+    }
+    
+    .source-it{
+        padding: 19px 0px 22px 0px;
+        font-size: 14px;
+    }
+
+    .employee{
+        margin:50px 0px 0px 0px;
+    }
+
+    .leave-us{
+        font-size: 15px;
+    }
+
+    .input-data{
+        padding-top:20px;
+    }
+  }
+/* //////////////// */

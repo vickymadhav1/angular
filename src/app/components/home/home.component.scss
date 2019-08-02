@@ -1,0 +1,605 @@
+.home-text {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sub-menu-items {
+  text-decoration: none;
+  color: #d7d7d7;
+}
+
+.header {
+  background: url(../../../assets/banner-image1.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.header-icon .mat-drawer-container {
+  position: absolute;
+}
+
+.aboutus-header {
+  padding: 30px 0px 0px 0px;
+}
+@media (max-width: 500px) {
+  .aboutus-header {
+    display: none;
+  }
+}
+
+.aboutus-header a.directory {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+/* ------------------------------------Banner section 0 ------------------------------ */
+.form-control:focus {
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255);
+}
+.banner {
+  background-image: url(../../../assets/homepage.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: inherit;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  padding-top: 4em;
+}
+
+.banner .container-fluid {
+  padding-left: 0px;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 55.5px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+ul.side-menu-list {
+  position: absolute;
+  padding-top: 30px;
+}
+
+.banne_content {
+  padding-top: 100px;
+}
+
+.form-control {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+}
+@media (max-width: 1500px) {
+  .items_aline {
+    padding: 5% 8% 5% 8%;
+  }
+}
+@media (max-width: 1300px) {
+  .items_aline {
+    padding: 5% 2.7% 5% 2.7%;
+  }
+}
+@media (max-width: 450px) {
+  .items_aline {
+    padding: 5% 18% 5% 18%;
+  }
+}
+@media (max-width: 350px) {
+  .items_aline {
+    padding: 5% 18% 5% 18%;
+  }
+}
+@media (max-width: 320px) {
+  .items_aline {
+    padding: 5% 6% 5% 6%;
+  }
+}
+.company_wrap {
+  display: flex;
+  box-shadow: 4px 4px 19px -6px #000000;
+}
+
+.button_wrap-align {
+  width: 60px;
+  border: none;
+  background: #0797ae;
+}
+.enable {
+  width: 60px;
+  border: none;
+  cursor: not-allowed;
+  background: #afcace;
+}
+
+i.fa.fa-search {
+  color: white;
+}
+
+.arange-item {
+  height: 50px;
+}
+
+@media (max-width: 1024px) {
+  h1.text-center {
+    font-size: 42px;
+  }
+  ul.side-menu-list li {
+    padding-bottom: 4px;
+    font-size: 16px;
+  }
+  ul.side-menu-list {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.banner h1 {
+    font-size: 38px;
+  }
+
+  .banner {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 640px) and (min-width: 360px) {
+  section.banner h1 {
+    font-size: 18px;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: 90px;
+  }
+  ul.side-menu-list {
+    display: none;
+  }
+  .banne_content[_ngcontent-bqh-c1] {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  section.banner h1 {
+    font-size: 13px;
+  }
+  .form-control {
+    font-size: 12px;
+  }
+  .arange-item {
+    height: 30px;
+  }
+  .img-fluid {
+    max-width: 100%;
+    height: 90px;
+  }
+  ul.side-menu-list {
+    display: none;
+  }
+}
+
+/* ---------------------------------arrow section 1-------------------------------- */
+
+.down-arrow a {
+  color: white;
+  text-decoration: none;
+}
+
+.down-arrow .arrow {
+  text-align: center;
+  margin: 0 0;
+}
+
+.arrow {
+  position: unset;
+  top: 0;
+  right: 0;
+}
+
+.down-arrow .bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ------------------------------contributor-section 2------------------------------- */
+
+section#contributor-section {
+  padding: 30px 0;
+}
+
+p.text-center.contributors {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+.emp,
+.companylist {
+  padding-left: 35px;
+  color: #000000;
+  font-size: 13px;
+  background-position-x: 240px;
+  border-radius: 0px;
+  height: 60px;
+}
+
+#comapany-select {
+  border-left: 1px solid #e0e6ed;
+  position: relative;
+  padding-left: 80px;
+  color: #000000;
+  font-size: 13px;
+}
+
+.emp select,
+.companylist select {
+  -webkit-appearance: menulist;
+  border-radius: 0px;
+  height: 60px;
+  border-left: 0px;
+}
+
+#select-company-icon {
+  position: absolute;
+  top: 16px;
+  left: 32px;
+}
+
+#contribute-as {
+  padding-left: 0px;
+  color: #000000;
+  position: relative;
+  font-size: 13px;
+  background-position-x: 240px;
+  padding-left: 60px;
+}
+
+.btn-started {
+  border: 1px solid #e0e6ed;
+  border-radius: 0;
+  border-left: none;
+  font-size: 13px;
+  color: black;
+  background-color: white;
+  position: relative;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 0;
+  outline: none;
+  height: 60px;
+  width: 100%;
+}
+
+/* ------------------------------Top company A-Z section 3------------------------------- */
+
+section.top-companiess {
+  padding: 30px 0 20px 0;
+}
+
+.top-company-name p {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.7;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+p.company-list-order {
+  float: right;
+}
+
+p.company-list-order span {
+  letter-spacing: 3px;
+}
+
+.border-line {
+  padding-top: 40px;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+@media (max-width: 1024px) {
+  .emp,
+  .companylist {
+    border-left: 1px solid #e0e6ed;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  p.text-center.contributors {
+    font-size: 16px;
+  }
+  #contribute-as {
+    padding-left: 80px;
+    color: #000000;
+    font-size: 13px;
+    background-position-x: 300px;
+  }
+  .form-group {
+    border-left: 1px solid #e0e6ed;
+  }
+  .top-company-name p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+/* -------------------------Top company list section 4 --------------------------------*/
+
+.card {
+  padding: 20px 0px 20px 0px;
+  border: none;
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 3px solid;
+}
+
+.content {
+  display: flex;
+  padding-top: 15px;
+}
+
+.total-number {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 10px 0;
+}
+
+.ratio {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 10px 0px 10px 0px;
+}
+
+.chart-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+  padding: 0px 0px 20px 0px;
+}
+
+.up_to_date {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  font: bold;
+  padding-top: 10px;
+}
+
+.inq {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 0px 0px 20px 0px;
+}
+
+.include {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 0px 0px 0px 10px;
+}
+
+.card-text {
+  font-family: Montserrat;
+  font-size: 85.5px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #397c86;
+  border-bottom: 1px solid;
+}
+
+.percieved-quotient-total {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  padding-bottom: 5px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.range {
+  font-family: Montserrat;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+}
+
+.percieved {
+  display: flex;
+  padding: 30px 0px 0px 20px;
+  float: right;
+}
+
+.quotient {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 0 10px 0px 0px;
+}
+
+.percent-wrap {
+  font-family: Montserrat;
+  font-size: 35px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.perce {
+  display: flex;
+  padding: 30px 0px 0px 20px;
+  float: right;
+}
+
+.verified {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 0px 20px 0px 0px;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  section.banner .img-fluid {
+    max-width: 100%;
+    height: 90px;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

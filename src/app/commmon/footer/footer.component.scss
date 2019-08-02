@@ -1,0 +1,44 @@
+.example-full-width ::ng-deep .mat-form-field-label {
+  color: black !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .newsletter {
+    padding: 0px;
+  }
+
+  .footer-col1 {
+    padding: 30px 0px;
+  }
+
+  .newsletter-text {
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    .newsletter-text {
+      padding: 10px;
+    }
+  }
+
+  .example-full-width {
+    padding-top: 15px;
+  }
+
+  .arrow {
+    top: 36px;
+    right: 6px;
+  }
+
+  .footer-icons {
+    padding: 20px 0px 30px 0px;
+  }
+
+  .row {
+    margin: 0px;
+  }
+  @media (max-width: 768px) {
+    .icon {
+      width: 30px;
+    }
+  }
+}

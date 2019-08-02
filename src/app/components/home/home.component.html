@@ -1,0 +1,276 @@
+<section class="banner">
+  <div class="container-fluid">
+    <div class="banne_content">
+      <div class="txt_align">
+        <h1 class="text-center">Is my company treating me fairly?</h1>
+        <div class="row m-0 justify-content-center">
+          <div
+            class="col-lg-10 col-md-12 col-sm-12 col-xs-12 align-self-center"
+          >
+            <form class="items_aline">
+              <div class="form-group company_wrap">
+                <input
+                  class="form-control arange-item"
+                  #companyName
+                  required
+                  (input)="(null)"
+                  placeholder="Search for a Company"
+                  [formControl]="companycontrol"
+                  [matAutocomplete]="auto"
+                />
+                <button
+                  [ngClass]="
+                    !companyName.value ? 'enable' : 'button_wrap-align'
+                  "
+                  type="submit"
+                  (click)="searchCompany()"
+                  [disabled]="!companyName.value"
+                >
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+              <mat-autocomplete #auto="matAutocomplete">
+                <mat-option
+                  *ngFor="let company of dropdownCompanyList"
+                  [value]="company.name"
+                >
+                  {{ company.name }}
+                </mat-option>
+              </mat-autocomplete>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="down-arrow">
+      <div class="arrow bounce">
+        <a class="fa fa-arrow-down fa-2x" href="#"></a>
+      </div>
+    </div> -->
+  </div>
+</section>
+<!------------------------------------ Contributor section----------------------------- -->
+<section id="contributor-section">
+  <p class="text-center contributors">DO YOU WANT TO BE A CONTRIBUTOR ?</p>
+  <div class="container">
+    <form [formGroup]="profileForm">
+      <div class="form-row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0 companylist">
+          <select
+            class="form-control"
+            id="comapany-select"
+            formControlName="company"
+          >
+            <option value="">SELECT THE COMPANY</option>
+            <option
+              *ngFor="let company of dropdownCompanyList"
+              [value]="company.name"
+            >
+              {{ company.name }}</option
+            >
+          </select>
+          <div id="select-company-icon">
+            <img
+              src="../../assets/select-company.png"
+              height="30px"
+              alt="Select Company"
+            />
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 p-0 emp">
+          <select
+            class="form-control"
+            id="contribute-as"
+            #company
+            required
+            (input)="(null)"
+            ng-model="selected"
+            ng-init="selected=true"
+          >
+            <option value="">SELECT THE EMPLOYEE</option>
+            <option [value]="curemp" *ngIf="selected">FORMAR EMPLOYEE</option>
+            <option value="1">CURRENT EMPLOYEE</option>
+          </select>
+        </div>
+        <!-- <pre>{{currentcontrol | json}}</pre> -->
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 p-0">
+          <div class="form-group">
+            <button
+              class="btn btn-started btn-lg"
+              (click)="curforEmp()"
+              [disabled]="profileForm.invalid"
+            >
+              GET STARTED
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<!-----------------------------------Top company's A-Z  section-------------------------->
+<section class="top-companiess">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-12 col-xs-12">
+        <div class="top-company-name">
+          <p>Top company</p>
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-12 col-xs-12 float-right">
+        <p class="company-list-order">
+          <span> A</span>
+          <span> B</span>
+          <span> C</span>
+          <span> D</span>
+          <span> E</span>
+          <span> F</span>
+          <span> G</span>
+          <span> H</span>
+          <span> I</span>
+          <span> J</span>
+          <span> K</span>
+          <span> L</span>
+          <span> M</span>
+          <span> N</span>
+          <span> O</span>
+          <span> P</span>
+          <span> Q</span>
+          <span> R</span>
+          <span> S</span>
+          <span> T</span>
+          <span> U</span>
+          <span> V</span>
+          <span> W</span>
+          <span> X</span>
+          <span> Y</span>
+          <span> Z</span>
+        </p>
+      </div>
+    </div>
+    <div class="border-line"></div>
+  </div>
+</section>
+<!----------------------------- Company list section --------------------------------->
+<!-- <section class="container">
+  <div class="search-container">
+    <div class="row">
+      <div class="col-md-4 p-0" *ngFor="let companylist of companyCard">
+        <div class="first">
+          <div class="card">
+            <div class="card-body">
+              <img src="/assets/Layer5.png" alt="" class="img-fluid" />
+              <h5 class="title">{{ companylist.data.companyName }}</h5>
+              <div class="content">
+                <p class="inq">InQ</p>
+                <p class="include">INCLUSION QUOTIENT</p>
+              </div>
+              <div class="total-number">
+                <div class="number_align">
+                  <p class="card-text">
+                    {{ companylist.data.inclusionQuotient }}
+                  </p>
+                  <p class="total">100</p>
+                </div>
+                <div class="percieved-quotient-total">
+                  <div class="percieved">
+                    <p class="quotient">percieved <br />quotient</p>
+                    <p class="percent-wrap">
+                      {{ companylist.data.perceptionSocre }}
+                    </p>
+                  </div>
+                  <div class="perce">
+                    <p class="verified">verified<br />quotient</p>
+                    <p class="percent-wrap">
+                      {{ companylist.data.reputationScore }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="ratio">MALE FEMALE RATIO</p>
+              <ul class="chart-display">
+                <li class="female-percent">
+                  {{ companylist.data.managment.female }}<br />
+                  <p class="range">FEMALE</p>
+                </li>
+                <p-chart type="doughnut" width="100" height="90" [data]="data" [options]="pieChartOptions"></p-chart>
+                <li class="male-percent">
+                  {{ companylist.data.managment.male }}<br />
+                  <p class="range">MALE</p>
+                </li>
+              </ul>
+              <p class="up_to_date">27TH <strong>JAN</strong> 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="container">
+  <div class="search-container">
+    <div class="row">
+      <div class="col-md-4 p-0" *ngFor="let companylist of companyListData">
+        <div class="first">
+          <div class="card">
+            <div class="card-body">
+              <img src="{{ companylist.imageUrl }}" alt="" class="img-fluid" />
+              <h5 class="title">{{ companylist.name }}</h5>
+              <div class="content">
+                <p class="inq">InQ</p>
+                <p class="include">INCLUSION QUOTIENT</p>
+              </div>
+              <div class="total-number">
+                <div class="number_align">
+                  <p class="card-text">
+                    {{ companylist.inclusionQuotient }}
+                  </p>
+                  <p class="total">100</p>
+                </div>
+                <div class="percieved-quotient-total">
+                  <div class="percieved">
+                    <p class="quotient">percieved <br />quotient</p>
+                    <p class="percent-wrap">
+                      {{ companylist.reputationScore }}
+                    </p>
+                  </div>
+                  <div class="perce">
+                    <p class="verified">verified<br />quotient</p>
+                    <p class="percent-wrap">
+                      {{ companylist.factScore }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="ratio">MALE FEMALE RATIO</p>
+              <ul
+                class="chart-display"
+                *ngFor="let ratio of companylist.employeeRatio"
+              >
+                <li class="female-percent">
+                  {{ ratio.female }}<br />
+                  <p class="range">FEMALE</p>
+                </li>
+                <p-chart
+                  type="doughnut"
+                  width="100"
+                  height="90"
+                  [data]="data"
+                  [options]="pieChartOptions"
+                ></p-chart>
+                <li class="male-percent">
+                  {{ ratio.male }}<br />
+                  <p class="range">MALE</p>
+                  {{ companylist.employeeRatio | json }}
+                </li>
+              </ul>
+              <p class="up_to_date">27TH <strong>JAN</strong> 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="chartdiv"></div>

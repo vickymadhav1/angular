@@ -1,0 +1,73 @@
+<header class="header">
+  <div class="header-text">
+    <a href="">
+      <img class="img-fluid" src="../../../assets/Logo.png" alt="Engendered"
+    /></a>
+    <div class="aboutus-header">
+      <p class="directory1"><a href="#" class="directory">ABOUT US</a></p>
+      <p class="directory1"><a href="#" class="directory">SOLUTIONS</a></p>
+      <p class="directory1"><a href="#" class="directory">REACH US</a></p>
+    </div>
+  </div>
+  <div class="header-icon">
+    <img
+      (click)="showSideMenu()"
+      class="cursor-pointer"
+      width="30"
+      src="../../../assets/menu.png"
+      alt="Menu"
+    />
+    <mat-sidenav-container class="sidebar-container" *ngIf="shouldOpenSideMenu">
+      <div opened mode="side" position="end" class="mat-side">
+        <img
+          class="fa-times"
+          (click)="showSideMenu()"
+          width="25"
+          src="../../../assets/clear-button.png"
+        />
+        <div class="menu-items">
+          <h5 class="home-main">
+            <a class="home-text" href="https://www.engendered.co/">HOME</a>
+          </h5>
+          <h5 class="home-main"><a class="home-text" href="#">ABOUT US</a></h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.engendered.co/team" class="sub-menu-items"
+                >TEAM</a
+              >
+            </li>
+            <li>
+              <a href="https://www.engendered.co/press" class="sub-menu-items"
+                >PRESS</a
+              >
+            </li>
+            <li>
+              <a href="https://www.engendered.co/blog-1#" class="sub-menu-items"
+                >BLOG</a
+              >
+            </li>
+          </ul>
+          <h5 class="home-main">
+            <a href="#" class="home-text">ASSESMENTS</a>
+          </h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" routerLink="/quiz-test" class="sub-menu-items"
+                >INDIVIDUALS</a
+              >
+            </li>
+            <li><a href="#" class="sub-menu-items">ENTERPRISE</a></li>
+          </ul>
+          <h5 class="home-main">
+            <a class="home-text" href="#">CONTACT US</a>
+          </h5>
+        </div>
+        <div class="aboutus-header solutions">
+          <p class="directory1"><a href="#" class="directory">ABOUT US</a></p>
+          <p class="directory1"><a href="#" class="directory">SOLUTIONS</a></p>
+          <p class="directory1"><a href="#" class="directory">REACH US</a></p>
+        </div>
+      </div>
+    </mat-sidenav-container>
+  </div>
+</header>

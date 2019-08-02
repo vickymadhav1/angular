@@ -1,0 +1,246 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: auto;
+}
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.pad-0 {
+  padding: 0;
+}
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: white;
+}
+::ng-deep .mat-radio-checked {
+  border-color: #0000;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #000;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: #000;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-inclusion {
+  margin: 70px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  border-bottom: 3px solid #000000;
+}
+
+.inclusion-text {
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.infosys-text {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  color: #000000;
+  /* padding-top:10px; */
+  /* padding-bottom:10px; */
+  text-align: right;
+}
+
+.contributing-as {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 8px 0px 8px 0px;
+}
+
+.home-main {
+  padding-top: 25px;
+}
+
+.header-text {
+  position: absolute;
+  float: left;
+  padding: 1em;
+}
+
+.header-icon {
+  float: right;
+  padding: 20px 30px 0px 0px;
+}
+
+.menu {
+  font-size: 36px;
+}
+
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  /* background-color: #4c969f; */
+}
+
+.mat-side {
+  padding: 0px 150px 0px 50px;
+  background-color: #2299a2;
+  height: inherit;
+}
+
+.fa-times {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.menu-items {
+  padding: 30px 0px 0px 0px;
+}
+
+.home-text {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.46;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+}
+
+.sub-menu-items {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.46;
+  letter-spacing: normal;
+  text-align: left;
+  color: #d7d7d7;
+  padding: 6px 0px 0px 10px;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.footer-col1 {
+  padding: 81px 0px 50px 0px;
+}
+
+.newsletter {
+  padding: 78px 180px 0px 30px;
+  text-align: center;
+}
+
+.footer-icons {
+  padding: 75px 0px 50px 0px;
+}
+
+.newsletter-text {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.example-full-width {
+  /* padding:0px 90px 20px 41px; */
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  position: relative;
+  font-family: Montserrat;
+}
+
+.example-full-width ::ng-deep .mat-form-field-label {
+  color: black !important;
+}
+
+.arrow {
+  position: absolute;
+  top: 112px;
+  right: 180px;
+  border: none;
+  background-color: transparent;
+
+  i {
+    color: #167e88;
+  }
+}
+
+@media (max-width: 762px) {
+  .home-text {
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .sub-menu-items {
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    width: 18px;
+    right: 25px;
+    top: 30px;
+    cursor: pointer;
+  }
+
+  .menu-items {
+    padding-top: 35px;
+  }
+
+  .contributing-as {
+    font-size: 9px;
+  }
+}

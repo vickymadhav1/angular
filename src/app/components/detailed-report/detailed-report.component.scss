@@ -1,0 +1,190 @@
+.container-fluid {
+  background: url(../../../assets//banner-image1.png);
+  height: 137px;
+  background-position: center center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.detailed_page_wrap {
+  padding: 30px 0px 10px 0px;
+}
+.quiz {
+  font-family: Montserrat;
+  font-size: 49px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.infosys {
+  justify-content: space-between;
+  border-bottom: 3px solid;
+}
+.contribute {
+  display: flex;
+  padding: 10px 0px 10px 0px;
+}
+.employee {
+  font-weight: bold;
+}
+.limited {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+}
+.alg_cord {
+  padding: 20px 0px 0px 0px;
+}
+.card-title {
+  background-color: var(--dirty-blue);
+  font-family: Montserrat;
+  font-size: 85.5px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #397c86;
+}
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .item {
+    width: 20%;
+  }
+}
+.card {
+  border: none;
+}
+.emmit {
+  display: flex;
+}
+.abbre {
+  display: flex;
+  padding: 0px 0px 10% 0px;
+}
+.inq {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .inq {
+    font-size: 12px;
+  }
+}
+.mins {
+  padding: 0px 0px 0px 10px;
+}
+@media (max-width: 768px) {
+  .mins {
+    font-size: 12px;
+  }
+}
+.share {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 10% 0px 0px 0px;
+}
+.icons {
+  padding: 20px 0px 0px 0px;
+}
+.mb-4 {
+  background: #f6f8f9;
+  border-right: 1px solid #4a7b85;
+  border-radius: 0;
+}
+.here {
+  font-size: 60px;
+}
+@media (max-width: 768px) {
+  .here {
+    font-size: 35px;
+  }
+}
+.grid-images {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.facts-score {
+  color: #397c86;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+}
+.shareon {
+  padding: 20px 0px 20px 0px;
+}
+.empratio {
+  font-size: 14px;
+  line-height: normal;
+  color: #000000;
+  padding: 5px;
+}
+@media (max-width: 1024px) {
+  .empratio {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .empratio {
+    font-size: 12px;
+  }
+}
+.bab {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  color: #397c86;
+}
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eighty {
+  background-color: var(--dirty-blue);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.45;
+  letter-spacing: normal;
+  text-align: left;
+  color: #397c86;
+}
+.mb-5 {
+  background: #f6f8f9;
+}
+@media (max-width: 768px) {
+  .col-md-4 {
+    min-width: 50%;
+  }
+}

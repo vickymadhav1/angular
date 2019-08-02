@@ -1,0 +1,258 @@
+.container-fluid {
+  background: url(../../../assets//banner-image1.png);
+  height: 137px;
+  background-position: center center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.company-name {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.83;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-top: 15px;
+}
+.m-t-15 {
+  padding: 40px 0px 0px 11px;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.fm-t-15 {
+  padding: 40px 0px 0px 0px;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.card-body {
+  padding: 0px;
+  /* padding-left: 1rem; */
+}
+
+.inq-text {
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.inclusion-text {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-left: 9px;
+}
+
+.ninty-three {
+  padding: 7px 0px 7px 0px;
+  font-size: 50.5px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.42;
+  letter-spacing: normal;
+  text-align: left;
+  color: #397c86;
+  width: 75%;
+}
+
+.percieved-text {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  /* padding-top:7px; */
+}
+
+.hundred {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  width: 50%;
+}
+
+.verified-text {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 10px;
+}
+.sixty-seven {
+  padding: 0px 0px 0px 0px;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.not-applicable {
+  padding: 0px 0px 0px 0px;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.male-female {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-top: 12px;
+}
+
+.female-text {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.month-text {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-top: 8px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+.male-female-bars {
+  padding: 10px 0px 17px 0px;
+}
+
+.inq-inclusion {
+  padding-top: 5px;
+}
+
+.card {
+  border: none;
+  /* width: 18rem; */
+  padding: 5%;
+}
+// @media(max-width:768px){
+//     .card{
+//         padding: 30% 0px 20px 0px;
+//     }
+// }
+
+.grid-row {
+  padding-top: 9px;
+  display: grid;
+  grid-template-columns: 48% 27% 25%;
+}
+@media (max-width: 768px) {
+  .grid-row {
+    grid-template-columns: 30% 29% 25%;
+  }
+}
+
+.grid-row1 {
+  padding-top: 13px;
+  display: grid;
+  grid-template-columns: 48% 27% 25%;
+}
+@media (max-width: 768px) {
+  .grid-row1 {
+    grid-template-columns: 32% 29% 25%;
+  }
+}
+.card-img-top {
+  width: 194px;
+  height: 75px;
+}
+
+.male-female-bars {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.chartjs-render-monitor {
+  width: 200px;
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    border: none !important;
+  }
+
+  .verified-text,
+  .percieved-text {
+    font-size: 13px;
+  }
+
+  .sixty-seven,
+  .not-applicable {
+    font-size: 25px;
+  }
+
+  .m-t-15 {
+    font-size: 25px;
+    padding-left: 11px;
+  }
+
+  .fm-t-15 {
+    font-size: 25px;
+  }
+}

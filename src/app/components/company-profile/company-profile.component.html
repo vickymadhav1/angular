@@ -1,0 +1,58 @@
+<section class="container-fluid">
+  <!-- <img src="../../../assets/banner-image1.png" alt=""> -->
+</section>
+<div class="card">
+  <div>
+    <img class="card-img-top" src="../../assets/infosys2.png" alt="infosys" />
+  </div>
+  <div class="card-body Custom header-text">
+    <h5
+      class="card-title Custom company-name"
+      *ngFor="let companyprofilename of companyprofiledetails"
+    >
+      {{ companyprofiledetails }}
+    </h5>
+  </div>
+  <div class="card-body Custom body-border">
+    <div class="inq-inclusion">
+      <span class="inq-text">InQ</span>
+      <span class="inclusion-text">INCLUSION QUOTIENT</span>
+    </div>
+    <div class="grid-row">
+      <h5 class="ninty-three">93</h5>
+      <p class="percieved-text">PERCIEVED <br />QUOTIENT</p>
+      <p class="sixty-seven">67</p>
+    </div>
+    <div class="grid-row1">
+      <h5 class="hundred body-border1">100</h5>
+      <p class="verified-text">VERIFIED<br />QUOTIENT</p>
+      <p class="not-applicable">90</p>
+    </div>
+  </div>
+  <div class="card-body Custom body-border">
+    <p class="male-female">MALE FEMALE RATIO</p>
+    <div class="male-female-bars">
+      <p class="fm-t-15">
+        43% <br />
+        <span class="female-text">FEMALE</span>
+      </p>
+      <div>
+        <p-chart
+          type="doughnut"
+          width="400"
+          height="120"
+          [data]="data"
+          [options]="pieChartOptions"
+          >></p-chart
+        >
+      </div>
+      <p class="m-t-15">
+        57% <br />
+        <span class="female-text">MALE</span>
+      </p>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="month-text">27TH <b>JAN</b> 2019</p>
+  </div>
+</div>

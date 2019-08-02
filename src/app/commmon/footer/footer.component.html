@@ -1,0 +1,66 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pad-0 Custom footer-col1">
+        <img src="../../../assets/logo 2.png" alt="logo" height="90" />
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 Custom newsletter">
+        <p class="newsletter-text">SUBSCRIBE TO OUR NEWSLETTER</p>
+        <form [formGroup]="emailFormControl">
+          <div class="form-group">
+            <mat-form-field class="example-full-width">
+              <input
+                matInput
+                formControlName="emailId"
+                #email
+                placeholder="ENTER YOUR EMAIL ADDRESS"
+                autocomplete="off"
+              />
+              <mat-error *ngIf="emailFormControl.get('emailId').invalid">
+                <span
+                  *ngIf="
+                    emailFormControl.get('emailId').value !== '' &&
+                    (!emailFormControl.get('emailId').valid ||
+                      emailFormControl.get('emailId').touched)
+                  "
+                  >Email must be a valid email address</span
+                >
+              </mat-error>
+            </mat-form-field>
+            <button
+              type="submit"
+              class="arrow"
+              (click)="subscribeNewsLetter()"
+              [disabled]="!emailFormControl.valid"
+            >
+              <i class="material-icons">arrow_forward</i>
+            </button>
+          </div>
+        </form>
+        <div *ngIf="isSubscribed.show" class="hide">
+          <p>{{ isSubscribed.message }}</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Custom footer-icons">
+        <a href="#"
+          ><img src="../../../assets/twitter.png" alt="twitter" class="icon"
+        /></a>
+        <a href="#" class="pl-2"
+          ><img src="../../../assets/facebook.png" alt="facebook" class="icon"
+        /></a>
+        <a href="#" class="pl-2"
+          ><img
+            src="../../../assets/google-plus.png"
+            alt="google-plus"
+            class="icon"
+        /></a>
+        <a href="#" class="pl-2"
+          ><img
+            src="../../../assets/linkedin.png"
+            alt="linkedin"
+            class="icon"/></a
+        >&nbsp;
+      </div>
+    </div>
+  </div>
+</footer>

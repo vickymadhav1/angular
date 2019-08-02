@@ -1,0 +1,96 @@
+<section class="container-fluid">
+  <!-- <img src="../../../assets/banner-image1.png" alt=""> -->
+</section>
+<section class="container">
+  <div class="row">
+    <div class="col-md-12 pad-0">
+      <div class="grid-inclusion">
+        <div>
+          <h5 class="inclusion-text">INCLUSION <br />QUOTIENT QUIZ</h5>
+          <p class="contributing-as">CONTRIBUTING AS: <b>EMPLOYEE</b></p>
+        </div>
+        <div>
+          <h5 class="count" *ngIf="questions"><b></b></h5>
+        </div>
+      </div>
+      <div class="que-ans">
+        <div class="answ">
+          <h5 class="q-a">Q</h5>
+          <div [className]="'ques-div-comment'">
+            <div>
+              <p class="question">{{ question }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="ques">
+          <h5 class="q-a">A</h5>
+          <div class="options">
+            <div *ngIf="optionsText && optionsText.length > 0; else radioOpt">
+              <div class="options-grid">
+                <mat-radio-group class="radio-padd">
+                  <div *ngFor="let opt of options; let i = index">
+                    <mat-radio-button
+                      [value]="opt.aId"
+                      (change)="setOptionValue($event, i)"
+                      >{{ opt.answer }}
+                    </mat-radio-button>
+                    <!-- <span class="radio">{{ opt.answer }}</span> -->
+                  </div>
+                </mat-radio-group>
+              </div>
+            </div>
+            <ng-template #radioOpt>
+              <mat-radio-group>
+                <div *ngFor="let opt of options">
+                  <mat-radio-button
+                    [value]="opt.aId"
+                    (change)="setOptionValue($event)"
+                  ></mat-radio-button>
+                  <span class="radio">{{ opt.answer }}</span
+                  >s
+                </div>
+              </mat-radio-group>
+            </ng-template>
+            <p>
+              <mat-form-field appearance="fill">
+                <mat-label>Leave your comment</mat-label>
+                <input matInput placeholder="comment" />
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="progressbar">
+        <mat-progress-bar
+          mode="determinate"
+          value="{{ progress }}"
+          class="progress"
+        ></mat-progress-bar>
+      </div>
+      <div class="prev-next">
+        <div class="cursor-pointer" (click)="previousQuestion()">
+          <span><img src="../../assets/left-arrow.png"/></span>
+          <span class="previous-text">PREVIOUS</span>
+        </div>
+        <div
+          class="next cursor-pointer"
+          [ngClass]="{ disable: disable[nextID] === true }"
+          (click)="nextQuestion()"
+          *ngIf="nextID < questions?.length - 1"
+        >
+          <span class="next-text">NEXT</span>
+          <span><img src="../../assets/right-arrow.png"/></span>
+        </div>
+        <div
+          class="next cursor-pointer"
+          (click)="postQuestion()"
+          [ngClass]="{ disable: disable[nextID] === true }"
+          *ngIf="nextID >= questions?.length - 1"
+        >
+          <span class="next-text">Submit</span>
+          <span><img src="../../assets/right-arrow.png"/></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

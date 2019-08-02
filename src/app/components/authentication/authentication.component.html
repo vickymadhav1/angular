@@ -1,0 +1,88 @@
+<div mat-dailog-content>
+  <mat-tab-group dynamicHeight>
+    <mat-tab label="Register">
+      <div class="row m-1">
+        <div class="col-md-12">
+          <form [formGroup]="registerForm" (ngSubmit)="register()" novalidate>
+            <div class="form-group">
+              <label for="userName">User Name</label>
+              <input id="userName" type="text" formControlName="name" class="form-control" autocomplete="off"
+                [ngClass]="{ 'is-invalid': submitted && f.name.errors }" placeholder="Enter User Name" />
+              <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                <div *ngIf="f.name.errors.required">First Name is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="text" formControlName="email" class="form-control" autocomplete="off"
+                [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Enter Mail Id" />
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input id="password" type="password" formControlName="password" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Enter Password" />
+              <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required">Password is required</div>
+                <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Select your gender</label>
+              <div>
+                <input type="radio" value="female" name="gender" formControlName="gender" class=""
+                  [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                Female
+                <input type="radio" value="male" name="gender" formControlName="gender" class=""
+                  [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                Male
+              </div>
+              <div *ngIf="submitted && f.gender.errors" class="invalid-feedback">
+                <div *ngIf="f.gender.errors.required">select Gender</div>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <button [disabled]="loading || this.registerForm.invalid" class="btn btn-primary m-1">Register</button>
+              <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Login">
+      <div class="row m-0">
+        <div class="col-md-12 ">
+          <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" class="form-control" name="email" [(ngModel)]="model.email" autocomplete="off"
+                #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+              <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                <div *ngIf="email.errors.required">Email is required</div>
+                <div *ngIf="email.errors.email">Email must be a valid email address</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password" [(ngModel)]="model.password"
+                #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required
+                minlength="6" />
+              <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                <div *ngIf="password.errors.required">Password is required</div>
+                <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <button class="btn btn-primary" [disabled]="f.invalid">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

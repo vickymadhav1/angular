@@ -1,0 +1,215 @@
+<section class="container-fluid">
+  <!-- <img src="../../../assets/banner-image1.png" alt=""> -->
+</section>
+<div class="container">
+  <div class="row">
+    <div _ngcontent-vgi-c8="" class="first">
+      <div _ngcontent-vgi-c8="" class="card">
+        <div _ngcontent-vgi-c8="" class="card-body">
+          <img _ngcontent-vgi-c8="" alt="" height="50px" src="/assets/Layer5.png" />
+          <h5 _ngcontent-vgi-c8="" class="title">HEWLETT PACKARD</h5>
+          <div _ngcontent-vgi-c8="" class="content">
+            <p _ngcontent-vgi-c8="" class="inq">InQ</p>
+            <p _ngcontent-vgi-c8="" class="include">INCLUSION QUOTIENT</p>
+          </div>
+          <div _ngcontent-vgi-c8="" class="number_sdj">
+            <div _ngcontent-vgi-c8="" class="number_align">
+              <p _ngcontent-vgi-c8="" class="card-text">93</p>
+              <p _ngcontent-vgi-c8="" class="adjble">100</p>
+            </div>
+            <div _ngcontent-vgi-c8="" class="go">
+              <div _ngcontent-vgi-c8="" class="percieved">
+                <p _ngcontent-vgi-c8="" class="quotient">
+                  percieved <br _ngcontent-vgi-c8="" />quotient
+                </p>
+                <p _ngcontent-vgi-c8="" class="somewhere">67</p>
+              </div>
+              <div _ngcontent-vgi-c8="" class="perce">
+                <p _ngcontent-vgi-c8="" class="nab">
+                  verified<br _ngcontent-vgi-c8="" />quotient
+                </p>
+                <p _ngcontent-vgi-c8="" class="where">NA</p>
+              </div>
+            </div>
+          </div>
+          <p _ngcontent-vgi-c8="" class="male">MALE FEMALE RATIO</p>
+          <ul _ngcontent-vgi-c8="" class="list-inline">
+            <li _ngcontent-vgi-c8="" class="percent">
+              27%<br _ngcontent-vgi-c8="" />
+              <p _ngcontent-vgi-c8="" class="range">FEMALE</p>
+            </li>
+            <p-chart type="doughnut" width="80" height="70" [data]="data" [options]="pieChartOptions">
+            </p-chart>
+
+            <li _ngcontent-vgi-c8="" class="mahindra">
+              73%<br _ngcontent-vgi-c8="" />
+              <p _ngcontent-vgi-c8="" class="range">MALE</p>
+            </li>
+          </ul>
+          <p _ngcontent-vgi-c8="" class="up_to_date">27TH JAN 2019</p>
+        </div>
+      </div>
+    </div>
+    <div class="alin">
+      <div class="col-6 col-md-6">
+        <div class="card-horizontal">
+          <div>
+            <img src="assets/current-employee.png" alt="Card image cap" width="90" />
+          </div>
+          <div class="former-padd">
+            <h4 class="card-title1">I AM A CURRENT EMPLOYEE</h4>
+            <p class="card-text1">PLEASE HELP US UNDERSTAND THE SITUATION</p>
+            <div class="w-100 btn_aling">
+              <button class="btn btn-color" routerLink="/quiz-test">
+                TAKE QUIZ
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-horizontal card-margin">
+          <div>
+            <img src="assets/current-employee.png" alt="Card image cap" width="90" />
+          </div>
+          <div class="former-padd">
+            <h4 class="card-title1">I AM A FORMER EMPLYEE</h4>
+            <p class="card-text1">PLEASE HELP US UNDERSTAND THE SITUATION</p>
+            <div class="w-100 btn_aling">
+              <button class="btn btn-color" routerLink="/quiz-test">
+                TAKE QUIZ
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-horizontal card-margin">
+          <div>
+            <img src="assets/current-employee.png" alt="Card image cap" width="90" />
+          </div>
+          <div class="former-padd">
+            <h4 class="card-title1">I AM THE EMPLOYER</h4>
+            <p class="card-text1">PLEASE HELP US UNDERSTAND THE SITUATION</p>
+            <div class="w-100 btn_aling">
+              <button class="btn btn-color" routerLink="/quiz-test">
+                TAKE QUIZ
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="forgotPassword">
+  <div type="" class="btn google Btn" data-toggle="" data-target="#myModal" data-dismiss="modal"></div>
+  <div class="container">
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="displayTable">
+            <div class="displayTableCell">
+              <!-- <div class="title_wrap">
+                <img src="../../assets/Logo.png" class="logo_wrap" alt="" />
+              </div> -->
+              <div class="formGroup">
+                <!-- <div type="button" class="google_wrap" (click)="auth()">
+                  <img class="icon_wrap"
+                    src="https://developers.google.com/identity/images/btn_google_signin_light_normal_web.png" alt="" />
+                </div> -->
+                <mat-tab-group dynamicHeight>
+                  <mat-tab label="Register">
+                    <div class="row m-1">
+                      <div class="col-md-12">
+                        <form [formGroup]="registerForm" (ngSubmit)="register()" novalidate>
+                          <div class="form-group">
+                            <label for="userName">User Name</label>
+                            <input id="userName" type="text" formControlName="name" class="form-control" autocomplete="off"
+                              [ngClass]="{ 'is-invalid': submitted && f.name.errors }"
+                              placeholder="Enter User Name" />
+                            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                              <div *ngIf="f.name.errors.required">First Name is required</div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" formControlName="email" class="form-control" autocomplete="off"
+                              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Enter Mail Id" />
+                            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                              <div *ngIf="f.email.errors.required">Email is required</div>
+                              <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="password">Password</label>
+                            <input id="password" type="password" formControlName="password" class="form-control"
+                              [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+                              placeholder="Enter Password" />
+                            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                              <div *ngIf="f.password.errors.required">Password is required</div>
+                              <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label>Select your gender</label>
+                            <div>
+                              <input type="radio" value="female" name="gender" formControlName="gender" class=""
+                                [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                              Female
+                              <input type="radio" value="male" name="gender" formControlName="gender" class=""
+                                [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                              Male
+                            </div>
+                            <div *ngIf="submitted && f.gender.errors" class="invalid-feedback">
+                              <div *ngIf="f.gender.errors.required">select Gender</div>
+                            </div>
+                          </div>
+                          <div class="form-group text-center">
+                            <button [disabled]="loading || this.registerForm.invalid"
+                              class="btn btn-primary m-1">Register</button>
+                            <button type="reset" class="btn btn-danger">Reset</button>
+                          </div>
+
+                        </form>
+                      </div>
+                    </div>
+                  </mat-tab>
+                  <mat-tab label="Login">
+                    <div class="row m-0">
+                      <div class="col-md-12 ">
+                        <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" name="email" [(ngModel)]="model.email" autocomplete="off"
+                              #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required
+                              email />
+                            <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                              <div *ngIf="email.errors.required">Email is required</div>
+                              <div *ngIf="email.errors.email">Email must be a valid email address</div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" [(ngModel)]="model.password"
+                              #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required
+                              minlength="6" />
+                            <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                              <div *ngIf="password.errors.required">Password is required</div>
+                              <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+                            </div>
+                          </div>
+                          <div class="form-group text-center">
+                            <button class="btn btn-primary" [disabled]="f.invalid">Login</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </mat-tab>
+                </mat-tab-group>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
